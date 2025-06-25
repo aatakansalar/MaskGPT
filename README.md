@@ -81,6 +81,7 @@ Authorization: Bearer abc.def.ghi
 
 *  Regex pattern config from UI
 *  Activity stats
+*  Chrome Extension Release
 ---
 
 **Protect your secrets. Stay safe. Use MaskGPT.**
