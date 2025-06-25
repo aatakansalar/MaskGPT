@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "MaskGPT",
+  "version": "1.0.0",
+  "description": "Extension that automatically masks sensitive data like API keys, tokens, and secrets before sending to LLM interfaces",
+  "permissions": ["storage"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "ui/popup.html",
+    "default_title": "MaskGPT Settings"
+  },
+  "icons": {
+    "16": "assets/icon16.svg",
+    "48": "assets/icon48.svg",
+    "128": "assets/icon128.svg"
+  },
+  "web_accessible_resources": [{
+    "resources": ["patterns.json"],
+    "matches": ["<all_urls>"]
+  }]
+} 
