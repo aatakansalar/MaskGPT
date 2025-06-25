@@ -14,7 +14,7 @@ MaskGPT automatically detects and **masks sensitive information** (e.g., `pwd: m
 
 ---
 
-## 🧪 Example
+## Example
 
 When you **paste** something like:
 
